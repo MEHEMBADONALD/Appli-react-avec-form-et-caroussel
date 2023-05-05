@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import ReactDOM from 'react-dom/client';        // c'est ca qui permet de communiquer avec le navigateur
+import App from './App';                        // importer l'application
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));   // permet de recuperer la div
 root.render(
   <React.StrictMode>
-    <App />
+    <App />                           
   </React.StrictMode>
 );
 

@@ -1,7 +1,3 @@
-.caroussel-item{
-   height: 32rem;
-}
-
 .carousel-item img{
     height: 32rem;
     filter: brightness(50%);

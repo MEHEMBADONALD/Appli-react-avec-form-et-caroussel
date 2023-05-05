@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link } from 'react-router-dom'; 
+import {Link } from 'react-router-dom';     // Link c'est pour les routes hors de la navbar
 
 const Error = () => {
     return (

@@ -8,8 +8,8 @@ const Carroussel = () => {
                 <div className="carousel-item active">
                     <img src="images/car3.png" className="d-block w-100" alt="baniere"/>
                 <div className="carousel-caption">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>BIENVENUE CHEZ MONSITE</h5>
+                    <p>Les meilleurs choix</p>
                 </div>
              </div>
             </div>

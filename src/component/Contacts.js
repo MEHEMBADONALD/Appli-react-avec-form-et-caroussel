@@ -7,12 +7,12 @@ import { FaSpinner } from "react-icons/fa";   // on importe le nom de la libreri
  const Contact = ()=> {
 
 
- const [nom, setnom] = useState("")
+ const [nom, setnom] = useState("")             // declaration des variables nom,email,comment avec useState
  const [email, setemail] = useState("")
  const [comment, setcomment] = useState("")
  
- const [load, setload] = useState(false)
- const [succes, setsucces] = useState(false)
+ const [load, setload] = useState(false)           // constante pour la fonction load qui affiche l'icon lorsqu'on soumet un formulaire
+ const [succes, setsucces] = useState(false)       // constante pour la fonction succes qui affiche lz message 'envoyé avec succes' apres avoir soumis
 
 
 
@@ -29,7 +29,7 @@ import { FaSpinner } from "react-icons/fa";   // on importe le nom de la libreri
             $('input[type=email]').removeClass('is-invalid')
             $('textarea').addClass('is-invalid')
        }else{
-            setload(true)                                 // si les champs sont remplies; ca enlève  cal classe invalid et ca met l'icon load
+            setload(true)                                 // si les champs sont remplies; ca enlève la classe invalid et ca met l'icon load
             $('input[type=text]').removeClass('is-invalid')
             $('input[type=email]').removeClass('is-invalid')
             $('textarea').removeClass('is-invalid')
@@ -85,7 +85,7 @@ import { FaSpinner } from "react-icons/fa";   // on importe le nom de la libreri
                              <div className='mb-3'>
                                   <textarea className='form-control'  value={comment} onChange={(e)=>setcomment(e.target.value)} placeholder='Entrer Votre Description' rows="3"></textarea>
                              </div>
-                                  <button type='submit' className='btn btn-secondary w-50'>
+                                  <button type='submit' className='btn btn-secondary text-center w-50'>
                                     {
                                           load && <FaSpinner className='me-3'/>
                                     }

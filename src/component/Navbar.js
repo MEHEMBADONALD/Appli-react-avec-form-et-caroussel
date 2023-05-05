@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';    // recat-router-dom c'est pour creer les routes en react
+import {NavLink} from 'react-router-dom';   // recat-router-dom c'est pour creer les routes en react..NavLink c'est pourles routes de la nav
 
 const Navbar = () => {
     return (
